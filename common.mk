@@ -138,7 +138,9 @@ PRODUCT_PACKAGES += \
     init.qti.display_boot.sh \
     gralloc.default \
     vendor.qti.hardware.display.allocator-service \
-    vendor.qti.hardware.display.composer-service
+    vendor.qti.hardware.display.composer-service \
+    vendor.qti.hardware.display.demura-service
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
