@@ -129,14 +129,8 @@ PRODUCT_PACKAGES += \
 
 # GPS
 PRODUCT_PACKAGES += \
-    android.hardware.gnss@2.1-impl-qti \
-    android.hardware.gnss@2.1-service-qti \
     gnss@2.0-base.policy \
-    gnss@2.0-xtra-daemon.policy \
-    libbatching \
-    libgeofencing \
-    libgnss \
-    libloc_socket
+    gnss@2.0-xtra-daemon.policy
 
 PRODUCT_PACKAGES += \
     flp.conf \
