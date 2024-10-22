@@ -46,6 +46,7 @@ lib_fixups: lib_fixups_user_type = {
         'liblx-osal',
         'libats',
         'libagm',
+        'libpalclient',
     ): lib_fixup_remove,
 }
 
