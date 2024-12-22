@@ -50,6 +50,14 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+     (
+    'vendor/lib64/libgarden.so',
+    'vendor/lib64/libgarden_haltests_e2e.so',
+    ): blob_fixup()
+        .replace_needed(
+            'android.hardware.gnss-V1-ndk_platform.so',
+            'android.hardware.gnss-V1-ndk.so',
+    ),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
