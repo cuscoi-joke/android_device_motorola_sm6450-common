@@ -9,21 +9,8 @@ vendor/bin/adsprpcd
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 
-# Audio - aualgo config
-vendor/lib64/libaualgo_azp_wrapper.so
-vendor/lib64/libaualgo_foundation.so
-vendor/lib64/libar-gsl.so
-vendor/lib64/liblx-osal.so
-vendor/lib64/libar-acdb.so
-vendor/lib64/liblx-ar_util.so
-vendor/lib64/libar-gpr.so
-
-
 # Audio libraries
-vendor/lib64/hw/audio.primary.parrot.so
 vendor/lib64/libpal_net_if.so
-vendor/lib64/libar-pal.so;DISABLE_CHECKELF
-vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
 
 # Audio - soundfx
 vendor/lib64/soundfx/libasphere.so
@@ -44,9 +31,6 @@ vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libsoc_helper.so
-vendor/lib64/lib_bt_aptx.so
-vendor/lib64/lib_bt_ble.so
-vendor/lib64/lib_bt_bundle.so
 
 # Bluetooth (A2DP)
 vendor/lib64/btaudio_offload_if.so
