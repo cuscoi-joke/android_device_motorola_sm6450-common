@@ -41,7 +41,11 @@ lib_fixups: lib_fixups_user_type = {
         'vendor.qti.hardware.dpmservice@1.0',
     ): lib_fixup_vendor_suffix,
     (
-        'libagmclient',
+        'libar-pal',
+        'libar-acdb',
+        'liblx-osal',
+        'libats',
+        'libagm',
     ): lib_fixup_remove,
 }
 

@@ -76,6 +76,9 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     libqcomvisualizer \
     libqcomvoiceprocessing \
+    lib_bt_aptx \
+    lib_bt_ble \
+    lib_bt_bundle \
     sound_trigger.primary.parrot
 
 PRODUCT_COPY_FILES += \
