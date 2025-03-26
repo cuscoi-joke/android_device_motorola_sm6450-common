@@ -89,6 +89,7 @@ AUDIO_FEATURE_ENABLED_PROXY_DEVICE := true
 AUDIO_FEATURE_ENABLED_SSR := false
 AUDIO_FEATURE_ENABLED_SVA_MULTI_STAGE := true
 BOARD_SUPPORTS_OPENSOURCE_STHAL := true
+TARGET_PROVIDES_AUDIO_HAL := true
 BOARD_SUPPORTS_SOUND_TRIGGER := true
 BOARD_USES_ALSA_AUDIO := true
 
@@ -119,7 +120,9 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
 DEVICE_MATRIX_FILE := hardware/qcom-caf/common/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += \
+    $(DEVICE_PATH)/manifest.xml \
+    hardware/qcom-caf/sm8450/audio/primary-hal/configs/common/manifest_non_qmaa.xml
 ifeq ($(TARGET_HAS_SNXXX_NFC),)
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/manifest_nfc.xml
 endif
