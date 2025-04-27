@@ -7,13 +7,6 @@ persist.vendor.audio.ambisonic.capture=false
 persist.vendor.audio.apptype.multirec.enabled=false
 persist.vendor.audio.avs.afe_api_version=9
 persist.vendor.audio.bcl.enabled=false
-persist.vendor.audio.calfile0=/vendor/etc/acdbdata/Bluetooth_cal.acdb
-persist.vendor.audio.calfile1=/vendor/etc/acdbdata/General_cal.acdb
-persist.vendor.audio.calfile2=/vendor/etc/acdbdata/Global_cal.acdb
-persist.vendor.audio.calfile3=/vendor/etc/acdbdata/Handset_cal.acdb
-persist.vendor.audio.calfile4=/vendor/etc/acdbdata/Hdmi_cal.acdb
-persist.vendor.audio.calfile5=/vendor/etc/acdbdata/Headset_cal.acdb
-persist.vendor.audio.calfile6=/vendor/etc/acdbdata/Speaker_cal.acdb
 persist.vendor.audio.dualmic.config=endfire
 persist.vendor.audio.fluence.speaker=false
 persist.vendor.audio.fluence.tmic.enabled=false
@@ -289,7 +282,7 @@ sys.vendor.shutdown.waittime=500
 
 # SOC
 ro.soc.manufacturer=QTI
-ro.soc.model=SM7325
+ro.soc.model=SM6450
 
 # Stagefright
 debug.stagefright.c2inputsurface=-1
