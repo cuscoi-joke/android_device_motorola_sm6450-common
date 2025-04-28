@@ -21,7 +21,7 @@ from extract_utils.main import (
 namespace_imports = [
     'device/motorola/sm6450-common',
     'hardware/motorola',
-    'hardware/qcom-caf/sm8350',
+    'hardware/qcom-caf/sm8450',
     'hardware/qcom-caf/wlan',
     'vendor/qcom/opensource/commonsys-intf/display',
     'vendor/qcom/opensource/commonsys/display',
@@ -35,8 +35,13 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
+        'vendor.qti.imsrtpservice@3.0',
+        'vendor.qti.diaghal@1.0',
+        'com.qualcomm.qti.dpm.api@1.0',
+        'vendor.qti.hardware.dpmservice@1.0',
     ): lib_fixup_vendor_suffix,
     (
+        'libagmclient',
     ): lib_fixup_remove,
 }
 
