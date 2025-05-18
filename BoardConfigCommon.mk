@@ -40,8 +40,8 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_NO_GCC := true
-TARGET_KERNEL_SOURCE := kernel/motorola/sm6450
-TARGET_KERNEL_CONFIG := vendor/parrot_defconfig vendor/lineage_moto-parrot.config
+#TARGET_KERNEL_SOURCE := kernel/motorola/sm6450
+#TARGET_KERNEL_CONFIG := vendor/parrot_defconfig vendor/lineage_moto-parrot.config
 
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_OFFSET := 0x00008000
