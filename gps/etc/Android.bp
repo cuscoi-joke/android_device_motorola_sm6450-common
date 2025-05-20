@@ -1,8 +1,7 @@
 prebuilt_etc {
-
-    name: "flp.conf",
+    name: "batching.conf",
     vendor: true,
-    src: "flp.conf",
+    src: "batching.conf",
 }
 
 prebuilt_etc {
@@ -55,4 +54,11 @@ prebuilt_etc {
     vendor: true,
     sub_dir: "seccomp_policy",
     src: "seccomp_policy/gnss@2.0-xtra-daemon.policy",
+}
+
+prebuilt_etc {
+    name: "gnss@2.0-xtwifi-client.policy",
+    vendor: true,
+    sub_dir: "seccomp_policy",
+    src: "seccomp_policy/gnss@2.0-xtwifi-client.policy",
 }
