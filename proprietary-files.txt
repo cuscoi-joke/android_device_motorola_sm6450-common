@@ -9,9 +9,6 @@ vendor/bin/adsprpcd
 vendor/lib64/libadsp_default_listener.so
 vendor/lib64/libadsprpc.so
 
-# Audio libraries
-vendor/lib64/libpal_net_if.so
-
 # Audio - soundfx
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
@@ -207,9 +204,11 @@ vendor/lib64/libllvm-qcom.so
 vendor/lib64/libOpenCL.so
 
 # GNSS
+vendor/app/CACertService/CACertService.apk
 vendor/bin/edgnss-daemon
 vendor/bin/engine-service
 vendor/bin/garden_app
+vendor/bin/hw/android.hardware.gnss-aidl-service-qti
 vendor/bin/loc_launcher
 vendor/bin/lowi-server
 vendor/bin/mlid
@@ -217,8 +216,11 @@ vendor/bin/xtra-daemon
 vendor/bin/xtwifi-client
 vendor/etc/init/init.qdmastats.rc
 vendor/etc/init/loc-launcher.rc
+vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc
+vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
 vendor/etc/apdr.conf
+vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so
 vendor/lib64/libbatching.so
 vendor/lib64/libcacertclient.so
 vendor/lib64/libcdfw.so
@@ -228,6 +230,8 @@ vendor/lib64/libengineplugin.so
 vendor/lib64/libgarden.so
 vendor/lib64/libgarden_haltests_e2e.so
 vendor/lib64/libgdtap.so
+vendor/lib64/libgeofencing.so
+vendor/lib64/libgnss.so
 vendor/lib64/libgnsspps.so
 vendor/lib64/libgps.utils.so
 vendor/lib64/libizat_client_api.so
@@ -384,8 +388,6 @@ vendor/lib64/libsubsystem_control.so
 vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so
 
 
-
-
 # QSPM
 system_ext/bin/qspmsvc
 system_ext/etc/init/qspmsvc.rc
@@ -416,6 +418,7 @@ vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libminksocket_vendor.so
+vendor/lib64/libpal_net_if.so
 vendor/lib64/libops.so
 vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so

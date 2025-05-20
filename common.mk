@@ -130,10 +130,12 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     gnss@2.0-base.policy \
-    gnss@2.0-xtra-daemon.policy
+    gnss@2.0-xtra-daemon.policy \
+    gnss@2.0-xtwifi-client.policy
+
 
 PRODUCT_PACKAGES += \
-    flp.conf \
+    batching.conf \
     gnss_antenna_info.conf \
     gps.conf \
     izat.conf \
