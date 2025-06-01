@@ -223,25 +223,6 @@ vendor/lib64/libfastcvdsp_stub.so
 vendor/lib64/libfastcvopt.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
-# EGL
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/hw/vulkan.adreno.so
-vendor/lib64/libCB.so
-vendor/lib64/libadreno_app_profiles.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libgpudataproducer.so
-vendor/lib64/libgsl.so
-vendor/lib64/libkcl.so
-vendor/lib64/libkernelmanager.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-vendor/lib64/libOpenCL.so
-
 # GNSS
 vendor/app/CACertService/CACertService.apk
 vendor/bin/edgnss-daemon
@@ -303,6 +284,37 @@ vendor/lib64/vendor.qti.gnss-V3-ndk_platform.so
 vendor/lib64/vendor.qti.gnss-service.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.1.so
+
+# Graphics (Adreno)
+vendor/lib64/egl/eglSubDriverAndroid.so
+vendor/lib64/egl/libEGL_adreno.so
+vendor/lib64/egl/libGLESv1_CM_adreno.so
+vendor/lib64/egl/libGLESv2_adreno.so
+vendor/lib64/egl/libq3dtools_adreno.so
+vendor/lib64/egl/libq3dtools_esx.so
+vendor/lib64/libCB.so
+vendor/lib64/libadreno_app_profiles.so
+vendor/lib64/libadreno_utils.so
+vendor/lib64/libgpudataproducer.so
+vendor/lib64/libgsl.so
+vendor/lib64/libkcl.so
+vendor/lib64/libkernelmanager.so
+vendor/lib64/libllvm-glnext.so
+vendor/lib64/libllvm-qcom.so
+vendor/lib64/libmm-hdcpmgr.so
+vendor/lib64/libOpenCL.so
+
+# Graphics (Adreno firmware)
+vendor/firmware/gen6_3_26_0_zap.b00
+vendor/firmware/gen6_3_26_0_zap.b01
+vendor/firmware/gen6_3_26_0_zap.b02
+vendor/firmware/gen6_3_26_0_zap.elf
+vendor/firmware/gen6_3_26_0_zap.mbn
+vendor/firmware/gen6_3_26_0_zap.mdt
+vendor/firmware/gmu_gen70000.bin
+
+# Graphics (Vulkan)
+vendor/lib64/hw/vulkan.adreno.so
 
 # IRQ balance
 vendor/bin/msm_irqbalance
