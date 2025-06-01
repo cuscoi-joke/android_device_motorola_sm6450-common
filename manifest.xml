@@ -4,6 +4,16 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest version="2.0" type="device" target-level="6">
+    <hal format="hidl">
+        <name>android.hardware.audio</name>
+        <transport>hwbinder</transport>
+        <fqname>@7.0::IDevicesFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.audio.effect</name>
+        <transport>hwbinder</transport>
+        <fqname>@7.0::IEffectsFactory/default</fqname>
+    </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>
@@ -14,6 +24,11 @@
         <transport>hwbinder</transport>
         <fqname>@2.0::IBluetoothAudioProvidersFactory/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>android.hardware.gatekeeper</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IGatekeeper/default</fqname>
+    </hal>
     <hal format="hidl">
         <name>android.hardware.drm</name>
         <transport>hwbinder</transport>
@@ -59,6 +74,12 @@
         <transport>hwbinder</transport>
         <fqname>@2.3::IUceService/com.qualcomm.qti.uceservice</fqname>
     </hal>
+    <hal format="hidl">
+        <name>motorola.hardware.camera.desktop</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ICameraDesktop/default</fqname>
+        <fqname>@2.0::ICameraDesktop/default</fqname>
+    </hal>
     <hal format="hidl">
         <name>vendor.qti.data.factory</name>
         <transport>hwbinder</transport>
@@ -141,6 +162,11 @@
         <transport>hwbinder</transport>
         <fqname>@1.2::IQccsyshal/qccsyshal</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.qesdhal</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IQesdhal/default</fqname>
+    </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.am</name>
         <transport>hwbinder</transport>
@@ -220,6 +246,11 @@
         <transport>hwbinder</transport>
         <fqname>@3.0::IRTPService/imsrtpservice</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.qspmhal</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IQspmhal/default</fqname>
+    </hal>
     <hal format="hidl" override="true">
         <name>vendor.qti.power.pasrmanager</name>
         <transport>hwbinder</transport>
