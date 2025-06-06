@@ -15,6 +15,9 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/utagsBackup      u:object_r:vendor_utags_block_device:s0
 
 # Partition Mountpoints
+/bt_firmware(/.*)?                                      u:object_r:bt_firmware_file:s0
+/dsp(/.*)?                                              u:object_r:adsprpcd_file:s0
+/firmware(/.*)?                                         u:object_r:vendor_firmware_file:s0
 /fsg                                                    u:object_r:fsg_file:s0
 /(vendor|system/vendor)/fsg                             u:object_r:fsg_file:s0
 /(vendor|system/vendor)/super_fsg                       u:object_r:fsg_file:s0

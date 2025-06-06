@@ -48,7 +48,10 @@ BOARD_USES_QCOM_HARDWARE := true
 TARGET_BOARD_PLATFORM := parrot
 
 BOARD_ROOT_EXTRA_SYMLINKS := \
-    /vendor/fsg:/fsg
+    /vendor/fsg:/fsg \
+    /vendor/firmware_mnt:/firmware \
+    /vendor/bt_firmware:/bt_firmware \
+    /vendor/dsp:/dsp
 
 # A/B
 AB_OTA_UPDATER := true
