@@ -253,6 +253,14 @@ vendor/lib64/vendor.libmwqemiptablemgr.so
 vendor/lib64/vendor.qti.hardware.dpmservice@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so
 
+# DRM
+vendor/bin/hw/android.hardware.drm@1.4-service.widevine
+vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+vendor/etc/qcom_widevine_licenses.pfm
+vendor/lib64/libtrustedapploader.so
+vendor/lib64/libwvhidl.so
+
 # DSP
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc

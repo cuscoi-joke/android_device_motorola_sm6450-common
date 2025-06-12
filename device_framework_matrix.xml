@@ -85,6 +85,7 @@
     </hal>
     <hal format="aidl" optional="true" updatable-via-apex="true">
         <name>android.hardware.drm</name>
+        <version>1</version>
         <interface>
             <name>IDrmFactory</name>
             <instance>clearkey</instance>
