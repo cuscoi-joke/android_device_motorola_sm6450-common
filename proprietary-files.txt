@@ -589,7 +589,6 @@ vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so
 vendor/lib64/libssd.so
 vendor/lib64/libtime_genoff.so
-vendor/lib64/libtrustedapploader.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so
 
@@ -891,7 +890,6 @@ vendor/lib64/motorola.hardware.sensors-V1-ndk_platform.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so
 
-
 # Sensor Configs
 vendor/etc/sensors/hals.conf
 
@@ -918,6 +916,14 @@ vendor/firmware/venus_ecdsa.mbn
 vendor/firmware/venus_v6.mbn
 vendor/firmware/venus_v6_rsa.mbn
 vendor/firmware/venus_v7.mbn
+
+# Widevine DRM
+vendor/bin/hw/android.hardware.drm@1.4-service.widevine
+vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.4-service.widevine.xml
+vendor/etc/qcom_widevine_licenses.pfm
+vendor/lib64/libtrustedapploader.so
+vendor/lib64/libwvhidl.so
 
 # WiFi Display
 system/framework/WfdCommon.jar;BOOT_JAR
