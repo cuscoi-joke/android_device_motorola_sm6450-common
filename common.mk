@@ -204,9 +204,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/ravelin/media_profiles_ravelin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_ravelin.xml
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/media/parrot/media_codecs_performance_parrot_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_parrot_v1.xml \
-    $(LOCAL_PATH)/media/parrot/media_codecs_parrot_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_parrot_v1.xml \
-    $(LOCAL_PATH)/media/parrot/media_profiles_parrot_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_parrot_v1.xml
+    $(LOCAL_PATH)/media/parrot/media_codecs_performance_parrot_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_parrot_v0.xml \
+    $(LOCAL_PATH)/media/parrot/media_codecs_parrot_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_parrot_v0.xml \
+    $(LOCAL_PATH)/media/parrot/media_profiles_parrot_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_parrot_v0.xml
 
 PRODUCT_PACKAGES += \
     libpalclient
