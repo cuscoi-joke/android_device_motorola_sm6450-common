@@ -287,6 +287,7 @@ vendor/bin/xtwifi-client
 vendor/etc/init/init.qdmastats.rc
 vendor/etc/init/loc-launcher.rc
 vendor/etc/init/android.hardware.gnss-aidl-service-qti.rc
+vendor/etc/motorola/qcom_gps_license.pfm
 vendor/etc/vintf/manifest/android.hardware.gnss-aidl-service-qti.xml
 vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml
 vendor/etc/vintf/manifest/vendor.qti.gnss-service.xml
