@@ -53,6 +53,9 @@ vendor/lib64/soundfx/libshoebox.so
 vendor/lib64/soundfx/libspeakerbundle.so
 vendor/lib64/soundfx/libvisualizer.so
 
+# ANT+
+vendor/lib64/hw/com.dsi.ant@1.0-impl.so
+
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
