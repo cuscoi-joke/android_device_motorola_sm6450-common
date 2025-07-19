@@ -189,6 +189,9 @@ vendor/lib64/libcvp2_1.so
 # Diag
 system/lib64/vendor.qti.diaghal-V1-ndk.so
 system_ext/lib64/vendor.qti.diaghal@1.0.so
+vendor/bin/diag-router
+vendor/etc/init/vendor.qti.diag.rc
+vendor/etc/vintf/manifest/vendor.qti.diag.hal.service.xml
 vendor/lib64/vendor.qti.diaghal@1.0.so;MODULE_SUFFIX=_vendor
 
 # Display - HDR
@@ -394,6 +397,10 @@ vendor/firmware/gmu_gen70000.bin
 
 # Graphics (Vulkan)
 vendor/lib64/hw/vulkan.adreno.so
+
+# IPACM Diag
+vendor/bin/ipacm-diag
+vendor/etc/init/ipacm-diag.rc
 
 # IRQ balance
 vendor/bin/msm_irqbalance
