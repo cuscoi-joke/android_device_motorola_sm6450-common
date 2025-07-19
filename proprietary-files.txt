@@ -3,13 +3,14 @@
 ## RETAIL variant
 # Current blobs with ELF checks disabled:
 # libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
+# libqtigefar depends on libar-pal, which is a gnu makefile target
+# libmcs depends on libagm, which is a gnu makefile target
 
 # ADSP
 vendor/bin/adsprpcd
 vendor/bin/loadalgo
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
 vendor/lib64/libadspd.so
 vendor/lib64/libloadalgo_stub.so
 
@@ -40,6 +41,23 @@ vendor/lib/rfsa/adsp/libworker_pool.so
 vendor/etc/card-defs.xml
 vendor/etc/usecaseKvManager.xml
 
+# Audio libraries
+vendor/lib64/libadm.so
+vendor/lib64/libadsprpc.so
+vendor/lib64/libaualgo_foundation.so
+vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libmcs.so;DISABLE_CHECKELF
+vendor/lib64/libpal_net_if.so
+vendor/lib64/libqtigefar.so;DISABLE_CHECKELF
+
+# Audio misc
+vendor/etc/ap_gain.bin
+vendor/etc/ap_gain_mmul.bin
+vendor/etc/models/acd/event.eai
+vendor/etc/models/acd/music.eai
+vendor/etc/models/acd/speech.eai
+
 # Audio - soundfx
 vendor/lib64/soundfx/libasphere.so
 vendor/lib64/soundfx/libaudiopreprocessing.so
@@ -57,6 +75,7 @@ vendor/lib64/soundfx/libvisualizer.so
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/hw/audio.bluetooth_qti.default.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libsoc_helper.so
 
@@ -591,7 +610,6 @@ vendor/lib64/libdrmfs.so
 vendor/lib64/libdrmtime.so
 vendor/lib64/libminkdescriptor.so
 vendor/lib64/libminksocket_vendor.so
-vendor/lib64/libpal_net_if.so
 vendor/lib64/libops.so
 vendor/lib64/libqisl.so
 vendor/lib64/librpmb.so

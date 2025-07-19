@@ -161,6 +161,16 @@
         <transport>hwbinder</transport>
         <fqname>@1.1::IQesdhal/default</fqname>
     </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.AGMIPC</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IAGM/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.hardware.pal</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IPAL/default</fqname>
+    </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.am</name>
         <transport>hwbinder</transport>
