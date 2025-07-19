@@ -70,7 +70,9 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio.service \
+    android.hardware.bluetooth@1.0.vendor \
     android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth.audio@2.1.vendor \
     android.hardware.soundtrigger@2.3-impl \
     audioadsprpcd \
     audio.bluetooth.default \
@@ -82,7 +84,29 @@ PRODUCT_PACKAGES += \
     lib_bt_aptx \
     lib_bt_ble \
     lib_bt_bundle \
-    sound_trigger.primary.parrot
+    sound_trigger.primary.parrot \
+    vendor.qti.hardware.btconfigstore@1.0.vendor \
+    vendor.qti.hardware.btconfigstore@2.0.vendor
+
+PRODUCT_PACKAGES += \
+    agmcap \
+    agmcompressplay \
+    agmplay \
+    libagm_compress_plugin \
+    libagm_mixer_plugin \
+    libagm_pcm_plugin \
+    libagmclient \
+    libagmmixer \
+    libbatterylistener \
+    libfmpal \
+    libpalclient \
+    libqcompostprocbundle \
+    libsndcardparser \
+    libvolumelistener
+
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.AGMIPC@1.0-service \
+    vendor.qti.hardware.pal@1.0-impl
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sku_parrot/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_parrot/audio_effects.xml \
