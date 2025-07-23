@@ -40,7 +40,6 @@ vendor/lib/rfsa/adsp/libworker_pool.so
 
 # Audio - configs
 vendor/etc/card-defs.xml
-vendor/etc/usecaseKvManager.xml
 
 # Audio libraries
 vendor/lib64/libadm.so
