@@ -88,6 +88,9 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('android.hidl.base@1.0.so', 'libhidlbase.so'),
     'system_ext/lib64/libwfdservice.so': blob_fixup()
         .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
+    'system_ext/priv-app/ims/ims.apk': blob_fixup().apktool_patch(
+        'ims-patches'
+    ),
 
 }  # fmt: skip
 
