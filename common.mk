@@ -223,11 +223,7 @@ $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
-
-# LiveDisplay
-PRODUCT_PACKAGES += \
-    vendor.lineage.livedisplay@2.1-service.motorola_parrot
-
+    
 # Media
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/media/ravelin/media_codecs_performance_ravelin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_ravelin.xml \
