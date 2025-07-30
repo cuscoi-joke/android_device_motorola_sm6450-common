@@ -35,10 +35,12 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
 lib_fixups: lib_fixups_user_type = {
     **lib_fixups,
     (
+        'com.qualcomm.qti.dpm.api@1.0',
+        'vendor.qti.hardware.qccsyshal@1.0',
+        'vendor.qti.hardware.qccsyshal@1.1',
+        'vendor.qti.qspmhal@1.0',
         'vendor.qti.imsrtpservice@3.0',
         'vendor.qti.diaghal@1.0',
-        'com.qualcomm.qti.dpm.api@1.0',
-        'vendor.qti.hardware.dpmservice@1.0',
     ): lib_fixup_vendor_suffix,
     (
         'libar-pal',
@@ -51,6 +53,11 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'system_ext/etc/permissions/moto-telephony.xml': blob_fixup().regex_replace(
+        '/system/', '/system_ext/'
+    ),
+    ('vendor/bin/STFlashTool', 'vendor/lib64/sensors.moto.so'): blob_fixup()
+        .add_needed('libbase_shim.so'),
      (
     'vendor/bin/hw/android.hardware.gnss-aidl-service-qti',
     'vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so',
