@@ -1,2 +1,5 @@
-# Graphics
-persist.demo.hdmirotationlock=false
+# Audio
+audio.offload.disable=false
+audio.offload.gapless.enabled=false
+audio.offload.min.duration.secs=60
+audio.offload.video=false
