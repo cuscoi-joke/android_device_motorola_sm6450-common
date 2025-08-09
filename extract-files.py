@@ -53,6 +53,8 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/lib64/libqcodec2_core.so': blob_fixup()
+        .add_needed('libcodec2_shim.so'),
     'system_ext/etc/permissions/moto-telephony.xml': blob_fixup().regex_replace(
         '/system/', '/system_ext/'
     ),
